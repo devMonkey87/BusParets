@@ -9,13 +9,7 @@
 import UIKit
 
 class TableViewController: UIViewController, UITableViewDataSource , UITableViewDelegate{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
+
     
 
     @IBOutlet weak var tablita: UITableView!
@@ -23,15 +17,34 @@ class TableViewController: UIViewController, UITableViewDataSource , UITableView
         super.viewDidLoad()
         
         
-        tablita.delegate = self
-        tablita.dataSource = self
+
 
         
     }
     
+    
+    // MARK: - Table view datasource
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        
+        cell.textLabel?.text = "Henlo daddo"
+        
+        cell.detailTextLabel?.text = "dafac \(indexPath)"
+        return cell
+    }
+    
     @IBAction func test(_ sender: UIButton) {
         
-        print("ok")
+       
     }
     
   
