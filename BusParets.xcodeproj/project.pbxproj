@@ -14,6 +14,7 @@
 		443A0A0F233699B8000D7B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443A0A0D233699B8000D7B4B /* LaunchScreen.storyboard */; };
 		443A0A1D2337DF6F000D7B4B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A0A1C2337DF6F000D7B4B /* TableViewController.swift */; };
 		44AAE7FF233A747100C95E5C /* LolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AAE7FE233A747100C95E5C /* LolViewController.swift */; };
+		44F9AA372340C07300983C54 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9AA362340C07300983C54 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		443A0A10233699B8000D7B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443A0A1C2337DF6F000D7B4B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		44AAE7FE233A747100C95E5C /* LolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolViewController.swift; sourceTree = "<group>"; };
+		44F9AA362340C07300983C54 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		443A0A03233699B3000D7B4B /* BusParets */ = {
 			isa = PBXGroup;
 			children = (
+				44F9AA362340C07300983C54 /* MapViewController.swift */,
 				443A0A04233699B3000D7B4B /* AppDelegate.swift */,
 				443A0A06233699B3000D7B4B /* ViewController.swift */,
 				44AAE7FE233A747100C95E5C /* LolViewController.swift */,
@@ -144,6 +147,7 @@
 				44AAE7FF233A747100C95E5C /* LolViewController.swift in Sources */,
 				443A0A07233699B3000D7B4B /* ViewController.swift in Sources */,
 				443A0A1D2337DF6F000D7B4B /* TableViewController.swift in Sources */,
+				44F9AA372340C07300983C54 /* MapViewController.swift in Sources */,
 				443A0A05233699B3000D7B4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

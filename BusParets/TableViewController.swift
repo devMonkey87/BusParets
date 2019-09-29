@@ -11,15 +11,15 @@ import UIKit
 class TableViewController: UIViewController, UITableViewDataSource , UITableViewDelegate{
 
     
-
+var productos = ["UNO", "DOS", "TRES"]
+    
+    
     @IBOutlet weak var tablita: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
 
-
-        
     }
     
     
@@ -28,7 +28,7 @@ class TableViewController: UIViewController, UITableViewDataSource , UITableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
-        return 10
+        return productos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,9 +36,9 @@ class TableViewController: UIViewController, UITableViewDataSource , UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         
-        cell.textLabel?.text = "Henlo daddo"
+        cell.textLabel?.text = productos[indexPath.row]
         
-        cell.detailTextLabel?.text = "dafac \(indexPath)"
+        cell.detailTextLabel?.text = "valor \(indexPath.section)"
         return cell
     }
     

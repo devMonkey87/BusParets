@@ -91,6 +91,30 @@
             </objects>
             <point key="canvasLocation" x="-281.15942028985512" y="160.59782608695653"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="3a6-HJ-zWR">
+            <objects>
+                <viewController id="d6R-og-bm1" customClass="MapViewController" customModule="BusParets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJx-zh-6KW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cSk-20-JOu">
+                                <rect key="frame" x="0.0" y="122" width="414" height="614"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="B2Z-g3-Qbw"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapVista" destination="cSk-20-JOu" id="hdj-1Y-Np5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcr-kM-cm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598.55072463768124" y="496.46739130434787"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="Bzu-Ol-3HI">
             <objects>
@@ -188,15 +212,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPF-rn-zca">
-                                <rect key="frame" x="266" y="106" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="20" y="106" width="374" height="67"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="d6R-og-bm1" kind="show" id="bee-oE-VyA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gPF-rn-zca" firstAttribute="top" secondItem="fzE-mK-qkn" secondAttribute="top" constant="42" id="PwP-OI-UHs"/>
-                            <constraint firstItem="fzE-mK-qkn" firstAttribute="trailing" secondItem="gPF-rn-zca" secondAttribute="trailing" constant="102" id="dVP-Bo-GKp"/>
-                            <constraint firstItem="gPF-rn-zca" firstAttribute="leading" secondItem="fzE-mK-qkn" secondAttribute="leading" constant="266" id="hCJ-V3-sll"/>
+                            <constraint firstItem="gPF-rn-zca" firstAttribute="leading" secondItem="cHU-H0-X21" secondAttribute="leadingMargin" id="ZEH-l2-ImX"/>
+                            <constraint firstItem="gPF-rn-zca" firstAttribute="top" secondItem="fzE-mK-qkn" secondAttribute="top" constant="42" id="aPc-P4-Xso"/>
+                            <constraint firstItem="gPF-rn-zca" firstAttribute="trailing" secondItem="cHU-H0-X21" secondAttribute="trailingMargin" id="kRQ-Dl-dYU"/>
+                            <constraint firstItem="fzE-mK-qkn" firstAttribute="bottom" secondItem="gPF-rn-zca" secondAttribute="bottom" constant="563" id="mHz-gv-eMa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fzE-mK-qkn"/>
                     </view>
@@ -206,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4JD-mA-kTT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152" y="1616"/>
+            <point key="canvasLocation" x="150.72463768115944" y="1615.7608695652175"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NEl-C9-eYs">
